@@ -1,0 +1,495 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background: white;
+    padding: 12px 24px;
+    border-bottom: 1px solid #e9ecef;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.logo {
+/* font-size: 24px; */
+width: 50px;
+font-weight: bold;
+color: #333;
+}
+
+.logo-img {
+/* font-size: 24px; */
+width: 180px;
+height: 50px;
+object-fit: cover;
+}
+
+.logo .highlight {
+    background: #10b981;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin: 0 2px;
+}
+
+.search-container {
+    flex: 1;
+    max-width: 400px;
+    margin: 0 40px;
+    position: relative;
+}
+
+.search-input {
+    width: 100%;
+    padding: 8px 40px 8px 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+}
+
+.search-input:focus {
+    border-color: #10b981;
+}
+
+.search-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6b7280;
+    cursor: pointer;
+}
+
+.dropdown-btn {
+    background: #10b981;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    position: relative;
+}
+
+.sidebar {
+    width: 280px;
+    background: white;
+    border-right: 1px solid #e9ecef;
+    padding: 24px 0;
+    transition: transform 0.3s ease;
+}
+
+.sidebar.mobile-hidden {
+    transform: translateX(-100%);
+}
+
+.profile-section {
+    padding: 0 24px 24px;
+    border-bottom: 1px solid #e9ecef;
+    margin-bottom: 24px;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    background: #d1d5db;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    color: #9ca3af;
+    font-size: 24px;
+}
+
+.welcome-text {
+    color: #6b7280;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.user-name {
+    color: #10b981;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.nav-menu {
+    list-style: none;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 24px;
+    color: #6b7280;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.2s;
+    position: relative;
+}
+
+.nav-item:hover {
+    background-color: #f3f4f6;
+}
+
+.nav-item.active {
+    background-color: #f3f4f6;
+    color: #333;
+}
+
+.nav-item.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid #333;
+}
+
+.nav-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    fill: currentColor;
+}
+
+.main-content {
+    flex: 1;
+    padding: 32px;
+    transition: margin-left 0.3s ease;
+}
+
+.content-header {
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.content-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+}
+
+.inbox-search-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1;
+    max-width: 500px;
+}
+
+.inbox-search {
+    flex: 1;
+    position: relative;
+}
+
+.inbox-search-input {
+    width: 100%;
+    padding: 8px 40px 8px 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+}
+
+.inbox-search-input:focus {
+    border-color: #10b981;
+}
+
+.inbox-search-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6b7280;
+    cursor: pointer;
+}
+
+.add-btn {
+    background: #10b981;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.message {
+    background: white;
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.message-content {
+    flex: 1;
+}
+
+.message-author {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.message-text {
+    color: #6b7280;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.message-actions {
+    display: flex;
+    gap: 8px;
+    margin-left: 20px;
+}
+
+.action-btn {
+    background: none;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    color: #6b7280;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.action-btn:hover {
+    background-color: #f3f4f6;
+}
+
+.footer {
+    background: #1f2937;
+    color: white;
+    padding: 16px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.footer-links {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.language-selector {
+    background: none;
+    border: 1px solid #6b7280;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.copyright {
+    font-size: 14px;
+    color: #9ca3af;
+}
+
+.sidebar-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+}
+
+.sidebar-overlay.active {
+    display: block;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .header {
+        padding: 12px 16px;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+        order: -1;
+    }
+    
+    .logo {
+        font-size: 20px;
+    }
+    
+    .search-container {
+        margin: 0 16px;
+        max-width: none;
+        flex: 1;
+    }
+    
+    .dropdown-btn {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+    
+    .container {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        height: calc(100vh - 60px);
+        z-index: 999;
+        transform: translateX(-100%);
+    }
+    
+    .sidebar.mobile-visible {
+        transform: translateX(0);
+    }
+    
+    .main-content {
+        padding: 16px;
+        width: 100%;
+    }
+    
+    .content-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 16px;
+        margin-bottom: 20px;
+    }
+    
+    .content-title {
+        font-size: 20px;
+    }
+    
+    .inbox-search-container {
+        max-width: none;
+    }
+    
+    .message {
+        padding: 16px;
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+    .message-actions {
+        margin-left: 0;
+        justify-content: flex-end;
+    }
+    
+    .message-author {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+    
+    .message-text {
+        font-size: 13px;
+    }
+    
+    .footer {
+        padding: 16px;
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+    
+    .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+    
+    .footer-right {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 8px 12px;
+    }
+    
+    .search-container {
+        margin: 0 8px;
+    }
+    
+    .search-input, .inbox-search-input {
+        padding: 6px 32px 6px 12px;
+        font-size: 13px;
+    }
+    
+    .main-content {
+        padding: 12px;
+    }
+    
+    .message {
+        padding: 12px;
+    }
+    
+    .footer {
+        padding: 12px;
+    }
+    
+    .footer-links {
+        gap: 12px;
+    }
+}
