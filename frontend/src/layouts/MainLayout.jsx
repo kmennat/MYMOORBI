@@ -5,18 +5,27 @@ import Content from './Content';
 import Sidebar from './Sidebar';
 import './Header.css';
 import { Outlet } from 'react-router-dom';
+//import { useAuthStore } from '../store/auth'
+import { useAuth } from '../context/AuthContext';
 function MainLayout(){
+    const { isLoggedIn } = useAuth();
+
     return(
-        <>
         
-            <Header/>
+        <>
+        <Header/>
+        
+            
             <div class="container">
             
-            <table>
+            <table id="mytable">
                 <tr>
-                    <td>
-            <Sidebar/>
-            </td>
+                    
+                <td>
+                
+                <Sidebar/>
+                </td>
+                
             <td>
             <main className="main-content">
             <Outlet /> 

@@ -30,7 +30,7 @@ function Dashboard() {
                     <Link to={'/logout'}>Logout</Link>
                 </div>
                 : <div> <h1>Home Page</h1>
-                    <Link to={'/register'}>Register</Link>
+                    <Link to={'/myregister'}>Register</Link>
                     <br />
                     <br />
                     <Link to={'/login'}>Login</Link>
