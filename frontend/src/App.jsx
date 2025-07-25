@@ -16,6 +16,7 @@ import Video from './layouts/Video';
 import Inbox from './layouts/Inbox';
 import Setting from './layouts/Setting';
 import MyRegister from './layouts/Register';
+import MainLogin from './layouts/MainLogin';
 function App() {
   const [count, setCount] = useState(0)
 
@@ -24,7 +25,7 @@ function App() {
       <Routes>
       <Route path="/" element={<MainLayout />}>
           <Route index element={<Dashboard />} />
-          <Route path="/mylogin" element={<MyLogin />} />
+          
           <Route path="/videos" element={<Video />} />
           <Route path='/login' element={<Login />} />
           <Route path='/signup' element={<SignupForm />} />
@@ -33,9 +34,13 @@ function App() {
           <Route path='/mydash' element={<Dashboard />} />
           <Route path='/inbox' element={<Inbox />} />
           <Route path='/settings' element={<Setting />} />
-          <Route path='/myregister' element={<MyRegister />} />
+          
           <Route path='/forgot-password' element={<ForgotPassword />} />
           <Route path='/create-new-password' element={<CreatePassword />} />
+        </Route>
+        <Route path="/" element={<MainLogin />}>
+          <Route path="/mylogin" element={<MyLogin />} />
+          <Route path='/myregister' element={<MyRegister />} />
         </Route>
       </Routes>
     </BrowserRouter>

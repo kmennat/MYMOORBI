@@ -5,10 +5,18 @@ function Register(){
 return(
 <>
     <div class="container">
-        <div class="form-section">
+    <table >
+        
+            
+                <tr>
+                    <td>
             <h1 class="form-title">Register now</h1>
             <p class="form-subtitle">And become part of our team</p>
-            
+            </td>
+            </tr>
+            <div class="form-section">
+            <tr>
+            <td>
             <form>
                 <div class="form-row">
                     <div class="form-group">
@@ -68,16 +76,27 @@ return(
 
                 <button type="submit" class="register-btn">register</button>
             </form>
-        </div>
-
-        <div class="hero-section">
+            </td>
+            <td>
+            <div class="hero-section">
         <h2 class="hero-title">
                 Connect with the<br />
                 best to create<br />
                 your <span class="highlight">dream team</span>
+                
             </h2>
+            </div>
+            </td>
+            </tr>
+            
+        
+            </div>
+            </table>
+            
         </div>
-        </div>
+
+        
+        
     </>
     
     );

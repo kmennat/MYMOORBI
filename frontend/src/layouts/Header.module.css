@@ -1,0 +1,56 @@
+.header {
+    background: white;
+    padding: 12px 24px;
+    border-bottom: 1px solid #e9ecef;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logoImg {
+    width: 180px;
+    height: 50px;
+    object-fit: cover;
+  }
+  
+  .middle {
+    flex: 1;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .login {
+    background: transparent;
+    border: 1px solid #ccc;
+    color: #333;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .register {
+    background: #10b981;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  .active {
+    background: #10b981 !important;
+    color: white !important;
+    border: none !important;
+  }
+  .inactive{
+    background: white !important;
+    color: black !important;
+    border-width: 10dvb;
+    border-color: #000000;
+    border: 10dvb !important;
+  }
+    

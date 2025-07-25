@@ -13,16 +13,6 @@ body {
 
 
 /* Header Styles */
-.header {
-    background: white;
-    padding: 12px 24px;
-    border-bottom: 1px solid #e9ecef;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-}
-
 .logo {
 display: flex;
 align-items: center;
@@ -166,11 +156,18 @@ color: white;
     display: flex;
     gap: 60px;
     align-items: flex-start;
+    flex-wrap: wrap;
+    align-items: anchor-center;
+
+}
+.mydiv{
+
+    width: 100%;
 }
 
 .form-section {
     flex: 1;
-    max-width: 500px;
+    max-width: 1200px;
 }
 
 .hero-section {

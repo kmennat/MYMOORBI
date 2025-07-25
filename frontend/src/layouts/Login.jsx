@@ -1,12 +1,12 @@
 import React from "react";
-import hstyles from './Login.css?inline';
+import './Login.css';
 function Login(){
 return(
 
 <div class="login-wrap">
         
 
-          <div class="login-container">
+        <div class="container">
         <div class="login-form">
             <h2>Log in</h2>
             <form>
