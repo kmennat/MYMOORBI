@@ -94,6 +94,7 @@ body {
         flex-direction: row;
         flex-wrap: nowrap;
         align-items: baseline;
+        width:100%;
     
 }
 
@@ -174,10 +175,13 @@ body {
 }
 
 .main-content {
-    flex: 1;
-    padding: 32px;
-    transition: margin-left 0.3s ease;
-    width:100%;
+    display: flex;
+        flex: 1;
+        position: relative;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: baseline;
+        width:100%;
 }
 
 .profile-header {

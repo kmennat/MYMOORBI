@@ -18,6 +18,7 @@ import Setting from './layouts/Setting';
 import MyRegister from './layouts/Register';
 import MainLogin from './layouts/MainLogin';
 import Home from './layouts/Content';
+import SignUp from './layouts/SignUp';
 function App() {
   const [count, setCount] = useState(0)
 
@@ -29,7 +30,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/videos" element={<Video />} />
           <Route path='/login' element={<Login />} />
-          <Route path='/signup' element={<SignupForm />} />
+          
           <Route path='/register' element={<Register />} />
           <Route path='/logout' element={<Logout />} />
           <Route path='/mydash' element={<Dashboard />} />
@@ -41,6 +42,7 @@ function App() {
         <Route path="/" element={<MainLogin />}>
           <Route path="/mylogin" element={<MyLogin />} />
           <Route path='/myregister' element={<MyRegister />} />
+          <Route path='/signup' element={<SignUp />} />
         </Route>
       </Routes>
     </BrowserRouter>

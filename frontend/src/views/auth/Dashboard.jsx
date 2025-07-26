@@ -33,6 +33,9 @@ function Dashboard() {
                     <Link to={'/myregister'}>Register</Link>
                     <br />
                     <br />
+                    <Link to={'/signup'}>SignUp</Link>
+                    <br />
+                    <br />
                     <Link to={'/login'}>Login</Link>
                 </div>
             }
