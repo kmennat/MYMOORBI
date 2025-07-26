@@ -297,13 +297,25 @@ object-fit: cover;
     justify-content: space-between;
     align-items: center;
     margin-top: auto;
+    position: relative;
+    bottom: 1px;
+    width: 100%;
 }
 
 .footer-links {
     display: flex;
     gap: 24px;
 }
-
+.footer-links a
+ {
+    text-decoration: none;
+    font-style: italic;
+    text-align: left;
+    
+    letter-spacing: 0px;
+    color: #fdfafa;
+    transition: color 0.3s ease;
+}
 .footer-link {
     color: white;
     text-decoration: none;
