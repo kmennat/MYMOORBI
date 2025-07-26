@@ -54,3 +54,14 @@
     border: 10dvb !important;
   }
     
+  .main_content {
+    flex: 1;
+    display: flex
+;
+    justify-content: center;
+    min-height: calc(100vh - 200px);
+    background-color: #f8f9fa;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+}

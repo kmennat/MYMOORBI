@@ -43,24 +43,24 @@ function Login(){
     };
 return(
 
-<div class="login-wrap">
+<div className="login-wrap">
         
 
-        <div class="container">
-        <div class="login-form">
+        <div className="container">
+        <div className="login-form">
             <h2>Log in</h2>
             <form onSubmit={handleLogin}>
-                <div class="input-group">
+                <div className="input-group">
                     <input type="text" id="username" onChange={(e) => setUsername(e.target.value)} name="username" placeholder="Username" required />
                 </div>
-                <div class="input-group password-group">
+                <div className="input-group password-group">
                     <input type="password" id="password" name="password" onChange={(e) => setPassword(e.target.value)} placeholder="Password" required />
-                    <span class="eye-icon">👁</span>
+                    <span className="eye-icon">👁</span>
                 </div>
-                <div class="forgot-password">
+                <div className="forgot-password">
                     <a href="#">Forgot password?</a>
                 </div>
-                <button type="submit" class="login-btn">Login</button>
+                <button type="submit" className="login-btn">Login</button>
             </form>
         </div>
     </div>

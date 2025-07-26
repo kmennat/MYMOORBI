@@ -13,11 +13,19 @@ body {
     min-height: 100vh;
 }
 
-.container {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+.container
+
+ {
+ 
+        min-height: 100vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+ 
+    
 }
+
 
 /* Header Styles */
 .header {

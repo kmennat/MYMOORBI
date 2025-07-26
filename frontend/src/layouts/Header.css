@@ -20,6 +20,18 @@ body {
     position: relative;
 }
 
+.main-content {
+    flex: 1;
+    display: flex
+;
+    justify-content: center;
+    min-height: calc(100vh - 200px);
+    background-color: #f8f9fa;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+
 .mobile-menu-btn {
     display: none;
     background: none;
@@ -92,6 +104,7 @@ body {
 
 .container {
     display: flex;
+    flex-direction: column;
     min-height: calc(100vh - 60px);
     position: relative;
 }
@@ -237,9 +250,7 @@ body {
         font-size: 14px;
     }
     
-    .container {
-        flex-direction: column;
-    }
+    
     
     .sidebar {
         position: fixed;

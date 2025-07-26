@@ -44,7 +44,7 @@ function MainLogin(){
 
                      
             
-            <main className="main-content">
+            <main className={styles.main_content}>
             <Outlet /> 
             </main>
             
