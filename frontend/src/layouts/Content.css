@@ -391,18 +391,6 @@ object-fit: cover;
         flex-direction: column;
     }
     
-    .sidebar {
-        position: fixed;
-        top: 60px;
-        left: 0;
-        height: calc(100vh - 60px);
-        z-index: 999;
-        transform: translateX(-100%);
-    }
-    
-    .sidebar.mobile-visible {
-        transform: translateX(0);
-    }
     
     .main-content {
         padding: 16px;
@@ -444,23 +432,7 @@ object-fit: cover;
         font-size: 13px;
     }
     
-    .footer {
-        padding: 16px;
-        flex-direction: column;
-        gap: 16px;
-        text-align: center;
-    }
     
-    .footer-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 16px;
-    }
-    
-    .footer-right {
-        flex-direction: column;
-        gap: 12px;
-    }
 }
 
 @media (max-width: 480px) {
@@ -485,11 +457,5 @@ object-fit: cover;
         padding: 12px;
     }
     
-    .footer {
-        padding: 12px;
-    }
     
-    .footer-links {
-        gap: 12px;
-    }
 }

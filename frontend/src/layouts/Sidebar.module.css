@@ -99,7 +99,14 @@ object-fit: cover;
     position: relative;
 }
 
+
 .sidebar {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    height: calc(100vh - 60px);
+    z-index: 999;
+    transform: translateX(-100%);
     width: 280px;
     background: white;
     border-right: 1px solid #e9ecef;
@@ -146,7 +153,7 @@ object-fit: cover;
     list-style: none;
 }
 
-.nav-item {
+.nav_item {
     display: flex;
     align-items: center;
     padding: 12px 24px;
@@ -157,16 +164,20 @@ object-fit: cover;
     position: relative;
 }
 
-.nav-item:hover {
+.nav_item:hover {
     background-color: #f3f4f6;
 }
 
-.nav-item.active {
+.nav_item.active {
     background-color: #f3f4f6;
     color: #333;
 }
+.nav_item.inactive {
+    background-color: white;
+    color: #6b7280;
+}
 
-.nav-item.active::before {
+.nav_item.active::before {
     content: '';
     position: absolute;
     left: 0;
@@ -300,51 +311,6 @@ object-fit: cover;
     background-color: #f3f4f6;
 }
 
-.footer {
-    background: #1f2937;
-    color: white;
-    padding: 16px 32px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: auto;
-}
-
-.footer-links {
-    display: flex;
-    gap: 24px;
-}
-
-.footer-link {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.footer-link:hover {
-    text-decoration: underline;
-}
-
-.footer-right {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-}
-
-.language-selector {
-    background: none;
-    border: 1px solid #6b7280;
-    color: white;
-    padding: 4px 12px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 14px;
-}
-
-.copyright {
-    font-size: 14px;
-    color: #9ca3af;
-}
 
 .sidebar-overlay {
     display: none;
@@ -444,23 +410,7 @@ object-fit: cover;
         font-size: 13px;
     }
     
-    .footer {
-        padding: 16px;
-        flex-direction: column;
-        gap: 16px;
-        text-align: center;
-    }
     
-    .footer-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 16px;
-    }
-    
-    .footer-right {
-        flex-direction: column;
-        gap: 12px;
-    }
 }
 
 @media (max-width: 480px) {
@@ -485,11 +435,5 @@ object-fit: cover;
         padding: 12px;
     }
     
-    .footer {
-        padding: 12px;
-    }
-    
-    .footer-links {
-        gap: 12px;
-    }
+ 
 }

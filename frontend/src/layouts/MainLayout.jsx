@@ -16,24 +16,19 @@ function MainLayout(){
         <Header/>
         
             
-            <div class="container">
-            
-            <table id="mytable">
+            <div >
+            <table>
                 <tr>
-                    
-                <td>
-                
-                <Sidebar/>
-                </td>
-                
+                    <td>
+            <Sidebar/>
+            </td>
             <td>
-            <main className="main-content">
+            <main >
             <Outlet /> 
             </main>
             </td>
             </tr>
             </table>
-            
             </div>
             <Footer/>
             </>

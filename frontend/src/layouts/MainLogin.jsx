@@ -42,7 +42,7 @@ function MainLogin(){
                 </div>
             </header>
 
-            <div class="container">
+            <div className="container">
             
             <table>
             <tr align="center">
