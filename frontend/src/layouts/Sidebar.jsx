@@ -23,7 +23,7 @@ function Sidebar(){
             <nav>
                    <ul className="nav-menu">
                     <li>
-                        <a href="/home" className={`${barstyle.nav_item} ${isHome ? barstyle.nav_item.active : barstyle.nav_item.inactive}`}>
+                        <a href="/home" className={`${barstyle.nav_item} ${isHome ? barstyle.active : barstyle.inactive}`}>
                             <svg width="20" height="20" className="nav-icon" viewBox="0 0 20 20">
                                 <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/>
                             </svg>
@@ -31,7 +31,7 @@ function Sidebar(){
                         </a>
                     </li>
                     <li>
-                        <a href="/videos" className={`${barstyle.nav_item} ${isVideo ? barstyle.nav_item.active : barstyle.nav_item.inactive}`}>
+                        <a href="/videos" className={`${barstyle.nav_item} ${isVideo ? barstyle.active : barstyle.inactive}`}>
                             <svg width="20" height="20" className="nav-icon" viewBox="0 0 20 20">
                                 <path d="M2 6a2 2 0 012-2h6l2 2h6a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"/>
                             </svg>
