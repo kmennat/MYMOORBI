@@ -42,20 +42,14 @@ function MainLogin(){
                 </div>
             </header>
 
-            <div className="container">
+                     
             
-            <table>
-            <tr align="center">
-            
-            <td >
             <main className="main-content">
             <Outlet /> 
             </main>
-            </td>
-            </tr>
-            </table>
             
-            </div>
+            
+          
             <Footer/>
             </>
         
