@@ -1,7 +1,9 @@
 import React from 'react'
 import { useAuthStore } from '../../store/auth'
 import { Link } from 'react-router-dom'
-
+import Header from '../../layouts/Header';
+import Footer from '../../layouts/Footer';
+import styles from './Dashboard.module.css';
 const newsItems = [
     {
         id: 1,
@@ -24,12 +26,13 @@ function Dashboard() {
     ])
     return (
         <>
+            <Header/>
             {isLoggedIn()
-                ? <div>
+                ? <div id="root" name="maindashboard" className={styles.body}>
                     <h1>Dashboard</h1>
                     <Link to={'/logout'}>Logout</Link>
                 </div>
-                : <div> <h1>Home Page</h1>
+                : <div id="root" name="maindashboard" className={styles.div_height}> <h1>Home Page</h1>
                     <Link to={'/myregister'}>Register</Link>
                     <br />
                     <br />
@@ -38,7 +41,10 @@ function Dashboard() {
                     <br />
                     <Link to={'/login'}>Login</Link>
                 </div>
+            
             }
+            <Footer/>
+
 
         </>
     )
