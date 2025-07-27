@@ -11,6 +11,7 @@ body {
     line-height: 1.6;
 }
 
+
 h2 {
     display: block;
     font-size: 1.5em;
@@ -31,6 +32,35 @@ h1 {
     font-weight: bold;
     unicode-bidi: isolate;
 }
+
+.container
+
+ {
+ 
+        min-height: 100vh;
+        max-width: 1200px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+ 
+    
+}
+
+.div_container
+
+ {
+ 
+        min-height: 100vh;
+        max-width: 1200px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+ 
+    
+}
+
 
 /* Header Styles */
 .logo {
@@ -103,7 +133,7 @@ background-color: #00CC7E;
     width: 100%;
 }
 
-.form-section {
+.form_section {
     flex: 1;
     max-width: 500px;
     display: flex;
@@ -116,13 +146,15 @@ background-color: #00CC7E;
     
 }
 
-.hero-section {
+
+
+.hero_section {
     flex: 1;
     text-align: center;
     
 }
 
-.hero-title {
+.hero_title {
     font-size: 48px;
     font-weight: 700;
     color: #2c3e50;
@@ -131,29 +163,29 @@ background-color: #00CC7E;
     text-align: right;
 }
 
-.form-title {
+.form_title {
     font-size: 28px;
     font-weight: 600;
     color: #2c3e50;
     margin-bottom: 8px;
 }
 
-.form-subtitle {
+.form_subtitle {
     font-size: 16px;
     color: #6c757d;
     margin-bottom: 40px;
 }
 
-.form-group {
+.form_group {
     margin-bottom: 20px;
 }
 
-.form-row {
+.form_row {
     display: flex;
     gap: 15px;
 }
 
-.form-row .form-group {
+.form_row .form_group {
     flex: 1;
 }
 
@@ -184,26 +216,26 @@ input::placeholder {
     font-size: 16px;
 }
 
-.checkbox-group {
+.checkbox_group {
     display: flex;
     align-items: center;
     gap: 12px;
     margin: 25px 0;
 }
 
-.checkbox-group input[type="checkbox"] {
+.checkbox_group input[type="checkbox"] {
     width: 18px;
     height: 18px;
     accent-color: #00CC7E;
 }
 
-.checkbox-group label {
+.checkbox_group label {
     font-size: 14px;
     color: #6c757d;
     cursor: pointer;
 }
 
-.register-btn {
+.register_btn {
     width: 100%;
     padding: 15px;
     background-color: #00CC7E;
@@ -216,11 +248,11 @@ input::placeholder {
     transition: background-color 0.3s ease;
 }
 
-.register-btn:hover {
+.register_btn:hover {
     background-color: #1ba085;
 }
 
-.hero-title {
+.hero_title {
     font-size: 48px;
     font-weight: 700;
     color: #2c3e50;
@@ -243,23 +275,23 @@ padding: 15px 20px;
 font-size: 24px;
 }
 
-.logo-icon {
+.logo_icon {
 width: 30px;
 height: 30px;
 font-size: 18px;
 }
 
-.auth-buttons {
+.auth_buttons {
 gap: 8px;
 }
 
-.btn-outline,
-.btn-primary {
+.btn_outline,
+.btn_primary {
 padding: 8px 16px;
 font-size: 13px;
 }
 
-.main-content {
+.main_content {
     max-width: 1200px;
     margin: 0 auto;
     
@@ -271,15 +303,15 @@ font-size: 13px;
 
 
 
-.form-container h1 {
+.form_container h1 {
 font-size: 28px;
 }
 
-.marketing-section {
+.marketing_section {
 padding: 40px 20px;
 }
 
-.marketing-content h2 {
+.marketing_content h2 {
 font-size: 32px;
 }
 
@@ -289,52 +321,39 @@ gap: 20px;
 padding: 20px;
 }
 
-.footer-links {
+.footer_links {
 gap: 20px;
 }
 
-.bottom-footer {
+.bottom_footer {
 flex-direction: column;
 gap: 15px;
 padding: 15px 20px;
 }
-.container
-
- {
- 
-        min-height: 100vh;
-        display: flex
-    ;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: flex-start;
- 
-    
-}
 
 
 
 
 
-    .hero-section {
+    .hero_section {
         order: -1;
         
     }
 
-    .form-section {
+    .form_section {
         max-width: 500px;
     }
 
-    .form-row {
+    .form_row {
         flex-direction: column;
         gap: 20px;
     }
 
-    .hero-title {
+    .hero_title {
         font-size: 36px;
     }
 
-    .form-title {
+    .form_title {
         font-size: 24px;
     }
 }
@@ -349,7 +368,7 @@ padding: 12px 15px;
 font-size: 20px;
 }
 
-.logo-icon {
+.logo_icon {
 width: 26px;
 height: 26px;
 font-size: 16px;
@@ -357,11 +376,11 @@ font-size: 16px;
 
 
 
-.form-container {
+.form_container {
 max-width: 100%;
 }
 
-.form-container h1 {
+.form_container h1 {
 font-size: 24px;
 }
 
@@ -369,29 +388,29 @@ font-size: 24px;
 font-size: 14px;
 }
 
-.input-group input {
+.input_group input {
 padding: 14px 16px;
 font-size: 14px;
 }
 
-.marketing-content h2 {
+.marketing_content h2 {
 font-size: 24px;
 }
 
-.footer-links {
+.footer_links {
 flex-wrap: wrap;
 gap: 15px;
 text-align: center;
 }
 
-.footer-links a {
+.footer_links a {
 font-size: 13px;
 }
-    .hero-title {
+    .hero_title {
         font-size: 28px;
     }
 
-    .form-title {
+    .form_title {
         font-size: 22px;
     }
 
@@ -410,7 +429,7 @@ font-weight: bold;
 color: #333;
 }
 
-.logo-img {
+.logo_img {
 /* font-size: 24px; */
 width: 180px;
 height: 50px;
