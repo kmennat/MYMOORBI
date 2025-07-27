@@ -13,6 +13,7 @@ function MainLogin(){
     const location = useLocation();
     const isLogin = location.pathname === '/mylogin';
     const isRegister = location.pathname === '/myregister';
+    const isSignup = location.pathname === '/signup';
 
     return(
         <>
@@ -37,6 +38,13 @@ function MainLogin(){
                             className={`${styles.register} ${isRegister ? styles.active : styles.inactive}`}
                             >
                             register
+                        </button>
+                    </NavLink>
+                    <NavLink to="/signup">
+                        <button
+                            className={`${styles.register} ${isSignup ? styles.active : styles.inactive}`}
+                            >
+                            Sign Up
                         </button>
                     </NavLink>
                 </div>
