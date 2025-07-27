@@ -1,9 +1,11 @@
 import React from "react";
 import './SignUp.css';
+import rstyle from './Register.module.css';
 function SignUp(){
 return(
 <>
-<section className="form-section">
+<div className={rstyle.container}>
+            <section className="form-section">
                 <div className="form-container">
                     <h1>Sign up now</h1>
                     <p className="subtitle">It's free and only takes two minutes.</p>
@@ -37,6 +39,7 @@ return(
                     <h2>Connect with the <br/>best to create<br/> your <span className="highlight">dream team</span></h2>
                 </div>
             </section>
+            </div>
             </>
            );
         }
