@@ -39,7 +39,7 @@ function Dashboard() {
                     <Link to={'/signup'}>SignUp</Link>
                     <br />
                     <br />
-                    <Link to={'/login'}>Login</Link>
+                    <Link to={'/mylogin'}>Login</Link>
                 </div>
             
             }
